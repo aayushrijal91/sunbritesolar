@@ -1,0 +1,29 @@
+$font-eurostile: "Eurostile", sans-serif;
+
+$font-body: $font-eurostile;
+
+$font-families: (
+    "eurostile": "Eurostile",
+);
+
+@each $name,
+$font-family in $font-families {
+    .font-#{$name} {
+        font-family: $font-family, sans-serif;
+    }
+}
+
+$asset-path: "../webfonts/";
+
+/* Fonts includer */
+@mixin font-face($font-family, $font-file, $weight: "normal", $style: "normal") {
+    @font-face {
+        font-family: $font-family;
+        src: local($font-file), url($asset-path + $font-file + ".woff") format("woff");
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+@include font-face("Eurostile", "EurostileExtended", 400);
+@include font-face("Eurostile", "EurostileExtendedBlack", 700);

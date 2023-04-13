@@ -1,0 +1,26 @@
+@function imgUrl($file, $path: "background"){
+@return url("../images/" + $path + "/" + $file) no-repeat;
+}
+
+header {
+    position: relative;
+
+    #headerVideo {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .navigation {
+        position: relative;
+    }
+}
+
+footer {
+    font-size: 0.875rem;
+    background-color: #221f1f;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 0.61rem;
+    }
+}
