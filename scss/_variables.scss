@@ -23,20 +23,16 @@ $theme-colors: map-merge((
 );
 
 $font-sizes: (
-    128: 8rem,
-    //128px
-    96: 6rem,
-    //96px
     64: 4rem,
     //64px
-    36: 2.25rem,
     //36px
     32: 2rem,
     //32px
-    24: 1.5rem,
-    //24px
-    20: 1.25rem,
-    //20px
+    
+    96: 96px,
+    36: 36px,
+    24: 24px,
+    20: 20px,
     17: 17px,
     16: 16px,
 );
@@ -57,7 +53,7 @@ $container-max-widths: (
     md: 740px,
     lg: 1280px,
     xl: 1442px,
-    xxl: 1632px,
+    xxl: 1812px,
     ) !default;
 
 $spacer: 1rem !default;
@@ -95,9 +91,7 @@ $utilities: map-merge((
         responsive: true,
         values: (
             1:1,
-            2:2,
-            3:1.29,
-            4:4,
+            "0_76": 0.76,
         )
     ),
     "rounded": (

@@ -2,8 +2,20 @@
 @return url("../images/" + $path + "/" + $file) no-repeat;
 }
 
+body {
+    position: relative;
+
+    .solar_globe {
+        position: absolute;
+        right: 0;
+        top: 124px;
+        z-index: 100;
+    }
+}
+
 header {
     position: relative;
+    overflow: hidden;
 
     #headerVideo {
         position: absolute;
@@ -13,6 +25,45 @@ header {
 
     .navigation {
         position: relative;
+        padding: 42px 0 32px;
+
+        .btn {
+            height: 48px;
+            font-size: 17px;
+        }
+    }
+
+    .banner {
+        position: relative;
+        border-top: 1px solid $dark;
+        border-bottom: 1px solid $dark;
+
+        .banner_wrapper {
+            padding: 105px 0;
+            border-right: 1px solid $dark;
+        }
+    }
+
+    .brands {
+        position: relative;
+        
+        .brands_wrapper {
+            padding: 36px 0;
+            border-right: 1px solid $dark;
+
+            #brands_slider {
+                .slick-track {
+                    display: flex;
+                }
+    
+                .slick-slide {
+                    height: inherit;
+                    display: flex;
+                    align-items: center;
+                    margin: 0 20px;
+                }
+            }
+        }
     }
 }
 

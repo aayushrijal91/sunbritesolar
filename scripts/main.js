@@ -1,4 +1,12 @@
-// AOS.init({ duration: 1500 });
+$("#brands_slider").slick({
+    slidesToShow : 4,
+    slidesToScroll : 1,
+    autoplay: true,
+    arrows: false,
+    speed: 2000,
+    autoplaySpeed: 0,
+    cssEase: 'linear'
+});
 
 document.querySelectorAll('a[href="#form"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {

@@ -1,7 +1,7 @@
 <?php
 include __DIR__ . '/env.php';
 
-$site = "Website Name";
+$site = "Sunbrite Solar";
 $phone_number = "02 8294 1923";
 $admin_email = 'arijal@aiims.com.au';
 $bcc_email = "";
