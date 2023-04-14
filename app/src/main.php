@@ -48,6 +48,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-7 banner_wrapper">
+                    <div class="free_solar_design">
+                        <?= renderImg('free-solar-design.png', 'lib', 'mainImg') ?>
+                    </div>
                     <h1 class="fs-96 lh-0_76">The leaders in solar energy solutions</h1>
                     <div class="fs-36 lh-1 py-5">Sydney's Solar Specialists. Top-quality<br> solar panel installation services in Sydney</div>
                     <div class="row">
@@ -96,7 +99,26 @@
 </header>
 
 <section class="government_assistance">
-    <div class="container"></div>
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="col-xl-7 government_assistance_wrapper">
+                <div class="position-relative">
+                    <?= renderImg('reliable-assistance-phone.png', 'lib', 'phone') ?>
+                    <?= renderImg('handcash.png', 'lib', 'handcash') ?>
+                </div>
+            </div>
+            <div class="col-xl-5 main_content">
+                <div class="free_solar_design">
+                    <?= renderImg('free_solar_design_white.png', 'lib', 'mainImg') ?>
+                </div>
+                <div class="fs-64 lh-1 text-white py-4">Government Assistance available NOW</div>
+                <div class="text-white fs-24 lh-1 pb-5">Top-quality solar panel installation<br> services in Sydney</div>
+                <a href="tel:<?= $phone_number ?>" class="btn border-white d-inline-flex rounded-0 text-white py-3 px-md-5">
+                    Enquire Now
+                </a>
+            </div>
+        </div>
+    </div>
 </section>
 
 <footer>

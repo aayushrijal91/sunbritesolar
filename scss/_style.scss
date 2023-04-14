@@ -41,12 +41,40 @@ header {
         .banner_wrapper {
             padding: 105px 0;
             border-right: 1px solid $dark;
+            position: relative;
+
+            .free_solar_design {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: imgUrl('solar-elec.png', 'lib') center;
+                right: 70px;
+                top: 16px;
+
+                .mainImg {
+                    animation-name: rotate;
+                    animation-duration: 10s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
+                }
+
+                @keyframes rotate {
+                    0% {
+                        transform: rotate(0);
+                    }
+
+                    100% {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
         }
     }
 
     .brands {
         position: relative;
-        
+
         .brands_wrapper {
             padding: 36px 0;
             border-right: 1px solid $dark;
@@ -55,13 +83,86 @@ header {
                 .slick-track {
                     display: flex;
                 }
-    
+
                 .slick-slide {
                     height: inherit;
                     display: flex;
                     align-items: center;
                     margin: 0 20px;
                 }
+            }
+        }
+    }
+}
+
+section.government_assistance {
+    background: imgUrl('government_assistance.jpg');
+    background-size: cover;
+
+    .government_assistance_wrapper {
+        padding: 114px 0 79px;
+        border-right: 1px solid $white;
+
+        .handcash {
+            position: absolute;
+            left: 51%;
+            top: 15%;
+            z-index: 1;
+            transform: rotate(20deg);
+            animation-name: bounce;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: rotate(20deg);
+            }
+
+            40%,
+            50%,
+            60%,
+            80% {
+                transform: rotate(50deg);
+                left: 70%;
+            }
+
+            100% {
+                transform: rotate(20deg);
+            }
+        }
+
+        .phone {
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    .main_content {
+        padding: 148px 64px;
+    }
+    
+    .free_solar_design {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background: imgUrl('solar_elec_white.png', 'lib') center;
+
+        .mainImg {
+            animation-name: rotate;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0);
+            }
+
+            100% {
+                transform: rotate(360deg);
             }
         }
     }
