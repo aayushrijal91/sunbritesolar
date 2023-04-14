@@ -121,6 +121,64 @@
     </div>
 </section>
 
+<section class="renewable_energy">
+    <div class="inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 renewable_energy_wrapper">
+                    <div class="row">
+                        <div class="col-xl-10">
+                            <div class="row justify-content-between align-items-end">
+                                <div class="col-auto"><?= renderImg('clean-energy-council.png', 'logo') ?></div>
+                                <div class="col-auto">
+                                    <div class="free_solar_design">
+                                        <?= renderImg('free-solar-design-2.png', 'lib', 'mainImg') ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fs-96 lh-0_76 py-5 text-tertiary">Renewable Energy is the future</div>
+                            <div class="fs-24 text-tertiary lh-1 pb-7">
+                                Embrace the future of renewable energy with our custom design solar panels, designed to power a sustainable world for generations to come. As we face the urgent challenge of climate change, solar energy is no longer just an option; it's the key to a cleaner, greener, and more resilient tomorrow.
+                            </div>
+                            <div>
+                                <a href="#" class="text-tertiary fs-24 pe-3">Speak with our Solar Energy Consultants today</a>
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.879 1.53334C17.879 0.981055 17.4312 0.53334 16.879 0.53334L7.87895 0.533341C7.32667 0.53334 6.87895 0.981056 6.87895 1.53334C6.87895 2.08562 7.32667 2.53334 7.87895 2.53334L15.879 2.53334L15.879 10.5333C15.879 11.0856 16.3267 11.5333 16.879 11.5333C17.4312 11.5333 17.879 11.0856 17.879 10.5333L17.879 1.53334ZM1.79665 18.0299L17.5861 2.24045L16.1718 0.826234L0.382432 16.6156L1.79665 18.0299Z" fill="#17274F" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5">
+                    <div class="solar_sheet_img">
+                        <?= renderImg('solar-sheets.png', 'lib') ?>
+                    </div>
+                    <div class="row gy-6 solar_sheets align-items-end">
+                        <div class="col-12">
+                            <a href="#" class="text-tertiary fs-24 pe-3">Free Solar Design</a>
+                            <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.879 1.53334C17.879 0.981055 17.4312 0.53334 16.879 0.53334L7.87895 0.533341C7.32667 0.53334 6.87895 0.981056 6.87895 1.53334C6.87895 2.08562 7.32667 2.53334 7.87895 2.53334L15.879 2.53334L15.879 10.5333C15.879 11.0856 16.3267 11.5333 16.879 11.5333C17.4312 11.5333 17.879 11.0856 17.879 10.5333L17.879 1.53334ZM1.79665 18.0299L17.5861 2.24045L16.1718 0.826234L0.382432 16.6156L1.79665 18.0299Z" fill="#17274F" />
+                            </svg>
+                        </div>
+                        <div class="col-12">
+                            <a href="#" class="text-tertiary fs-24 pe-3">Intelligent Energy Management System</a>
+                            <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.879 1.53334C17.879 0.981055 17.4312 0.53334 16.879 0.53334L7.87895 0.533341C7.32667 0.53334 6.87895 0.981056 6.87895 1.53334C6.87895 2.08562 7.32667 2.53334 7.87895 2.53334L15.879 2.53334L15.879 10.5333C15.879 11.0856 16.3267 11.5333 16.879 11.5333C17.4312 11.5333 17.879 11.0856 17.879 10.5333L17.879 1.53334ZM1.79665 18.0299L17.5861 2.24045L16.1718 0.826234L0.382432 16.6156L1.79665 18.0299Z" fill="#17274F" />
+                            </svg>
+                        </div>
+                        <div class="col-12">
+                            <a href="#" class="text-tertiary fs-24 pe-3">Customizable Solar Solutions</a>
+                            <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.879 1.53334C17.879 0.981055 17.4312 0.53334 16.879 0.53334L7.87895 0.533341C7.32667 0.53334 6.87895 0.981056 6.87895 1.53334C6.87895 2.08562 7.32667 2.53334 7.87895 2.53334L15.879 2.53334L15.879 10.5333C15.879 11.0856 16.3267 11.5333 16.879 11.5333C17.4312 11.5333 17.879 11.0856 17.879 10.5333L17.879 1.53334ZM1.79665 18.0299L17.5861 2.24045L16.1718 0.826234L0.382432 16.6156L1.79665 18.0299Z" fill="#17274F" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <footer>
     <div class="container">
         <div class="row justify-content-center justify-content-lg-between align-items-center">

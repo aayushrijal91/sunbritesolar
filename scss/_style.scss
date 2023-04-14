@@ -142,7 +142,7 @@ section.government_assistance {
     .main_content {
         padding: 148px 64px;
     }
-    
+
     .free_solar_design {
         display: inline-flex;
         justify-content: center;
@@ -164,6 +164,56 @@ section.government_assistance {
             100% {
                 transform: rotate(360deg);
             }
+        }
+    }
+}
+
+section.renewable_energy {
+    background: imgUrl('renewable-energy.jpg');
+    background-size: cover;
+
+    .inner {
+        background: imgUrl('marble.png') right bottom;
+
+        .renewable_energy_wrapper {
+            border-right: 1px solid $dark;
+            padding: 167px 0 117px;
+
+            .free_solar_design {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                background: imgUrl('solar-elec-2.png', 'lib') center;
+                right: 70px;
+                top: 16px;
+
+                .mainImg {
+                    animation-name: rotate;
+                    animation-duration: 10s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
+                }
+
+                @keyframes rotate {
+                    0% {
+                        transform: rotate(0);
+                    }
+
+                    100% {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+
+        .solar_sheets {
+            padding: 42px 64px 90px;
+
+        }
+
+        .solar_sheet_img {
+            margin-top: -50px;
+            margin-left: -95px;
         }
     }
 }
