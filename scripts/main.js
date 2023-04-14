@@ -8,6 +8,14 @@ $("#brands_slider").slick({
     cssEase: 'linear'
 });
 
+$("#testimonial_slider").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    centerMode: true,
+    centerPadding: "120px"
+})
+
 document.querySelectorAll('a[href="#form"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();

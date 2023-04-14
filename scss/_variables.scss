@@ -7,10 +7,10 @@ $light: #f3f3f3;
 $dark: #080F2B;
 $grey: #d9d9d9;
 
-$theme-colors: () !default;
+$theme-colors: (
+    ) !default;
 
-$theme-colors: map-merge((
-            "primary": $primary,
+$theme-colors: map-merge(("primary": $primary,
             "secondary": $secondary,
             "tertiary": $tertiary,
             "black": $black,
@@ -23,13 +23,14 @@ $theme-colors: map-merge((
 );
 
 $font-sizes: (
-    32: 2rem,
-    
     96: 96px,
     64: 4rem,
+    48: 48px,
     36: 36px,
+    32: 2rem,
     24: 24px,
     20: 20px,
+    18: 18px,
     17: 17px,
     16: 16px,
 );
@@ -77,64 +78,50 @@ $spacers: map-merge((0: 0,
         $spacers
 );
 
-$border-radius:               .25rem !default;
-$border-radius-pill:          50rem !default;
+$border-radius: .25rem !default;
+$border-radius-pill: 50rem !default;
 
-$utilities: () !default;
-$utilities: map-merge((
-    "line-height":(
-        property: line-height,
-        class: lh,
-        responsive: true,
-        values: (
-            1:1,
-            "0_76": 0.76,
-        )
-    ),
-    "rounded": (
-        property: border-radius,
-        class: rounded,
-        responsive: true,
-        values: (
-            null: $border-radius,
-            0:0,
-            1:1px,
-            2:2px,
-            3:3px,
-            4:4px,
-            5:5px,
-            6:6px,
-            7:7px,
-            8:8px,
-            9:9px,
-            10:10px,
-            20:20px,
-            circle: 50%,
-            pill: $border-radius-pill
-        )
-    ),
-    "font-weight": (
-        property: font-weight,
-        class: fw,
-        responsive: true,
-        values: (
-            100:100,
-            200:200,
-            300:300,
-            400:400,
-            500:500,
-            600:600,
-            700:700,
-            800:800,
-            900:900
-        )
-    ),
-    "letter-spacing": (
-        property: letter-spacing,
-        class: ls,
-        values: (
-            1: 0.01em,
-            2: -0.2em
-        )
-    )
-), $utilities);
+$utilities: (
+    ) !default;
+$utilities: map-merge(("line-height":(property: line-height,
+                class: lh,
+                responsive: true,
+                values: (1:1,
+                    "0_76": 0.76,
+                )),
+            "rounded": (property: border-radius,
+                class: rounded,
+                responsive: true,
+                values: (null: $border-radius,
+                    0:0,
+                    1:1px,
+                    2:2px,
+                    3:3px,
+                    4:4px,
+                    5:5px,
+                    6:6px,
+                    7:7px,
+                    8:8px,
+                    9:9px,
+                    10:10px,
+                    20:20px,
+                    54:54px,
+                    circle: 50%,
+                    pill: $border-radius-pill )),
+            "font-weight": (property: font-weight,
+                class: fw,
+                responsive: true,
+                values: (100:100,
+                    200:200,
+                    300:300,
+                    400:400,
+                    500:500,
+                    600:600,
+                    700:700,
+                    800:800,
+                    900:900)),
+            "letter-spacing": (property: letter-spacing,
+                class: ls,
+                values: (1: 0.01em,
+                    2: -0.2em))), $utilities
+);
