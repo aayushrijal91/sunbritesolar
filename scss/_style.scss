@@ -277,11 +277,11 @@ section.advantage {
     }
 }
 
-.testimonials {    
+.testimonials {
     .slick-track {
         display: flex;
     }
-    
+
     .slick-slide {
         border: 2px solid rgba(8, 15, 42, 0.5);
         border-radius: 31px;
@@ -295,11 +295,80 @@ section.advantage {
     }
 }
 
-footer {
-    font-size: 0.875rem;
-    background-color: #221f1f;
+section.government_benefits {
+    padding: 142px 0;
 
-    @include media-breakpoint-down(sm) {
-        font-size: 0.61rem;
+    .government_benefits_inner {
+        background: imgUrl('government_benefits.jpg');
+        background-size: cover;
+        border-radius: 54px;
+        padding: 192px 16px;
+        text-align: center;
+        position: relative;
+
+        .cartoon_hand_elec {
+            position: absolute;
+            top: 30px;
+            right: 45px;
+        }
+
+        .cartoon_solar_panel {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+        }
+
+        .playButton {
+            position: absolute;
+            right: 45px;
+            bottom: 38px;
+        }
+    }
+}
+
+footer {
+    position: relative;
+    border-radius: 54px;
+    font-family: $font-dmsans;
+    overflow: hidden;
+    margin-bottom: 109px;
+    padding-left: 145px;
+
+    #footerVideo {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .top_row {
+        padding: 121px 0 42px;
+
+        ul.footer_menu {
+            list-style: none;
+            padding-inline-start: 0;
+    
+            li {
+                .nav-link {
+                    font-size: 24px;
+                    color: $dark;
+                    text-decoration: none;
+                    line-height: 1;
+                    padding: 0;
+                }
+    
+                padding: 12px 0;
+            }
+        }
+    }
+
+    .divider_line {
+        border: 1.33333px solid $dark;
+        opacity: 0.5;
+    }
+
+    .footer_bulb {
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 }
