@@ -5,7 +5,15 @@ $("#brands_slider").slick({
     arrows: false,
     speed: 2000,
     autoplaySpeed: 0,
-    cssEase: 'linear'
+    cssEase: 'linear',
+    responsive: [
+        {
+            breakpoint: 540,
+            settings: {
+                slidesToShow: 3
+            }
+        }
+    ]
 });
 
 $("#testimonial_slider").slick({

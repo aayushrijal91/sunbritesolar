@@ -8,22 +8,22 @@
 
     <div class="navigation">
         <div class="container">
-            <div class="row justify-content-center justify-content-lg-between align-items-center">
-                <div class="col-auto">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-7 col-md-auto">
                     <a href="./">
                         <?= renderImg("logo.png", "logo") ?>
                     </a>
                 </div>
-                <div class="col-auto">
+                <div class="col-auto d-none d-md-block">
                     <?= renderImg('clean-energy-council.png', 'logo') ?>
                 </div>
-                <div class="col-auto fs-24">
+                <div class="col-auto fs-24 d-none d-md-block">
                     Installs
                 </div>
-                <div class="col-auto fs-24">
+                <div class="col-auto fs-24 d-none d-md-block">
                     Repairs/Maintenance
                 </div>
-                <div class="col-auto">
+                <div class="col-auto d-none d-md-block">
                     <div class="row justify-content-center justify-content-lg-end align-items-center">
                         <div class="col-12 col-md-auto">
                             <a href="tel:<?= $phone_number ?>" class="btn border-dark rounded-0 text-dark py-3 px-md-5">
@@ -45,15 +45,16 @@
     </div>
 
     <div class="banner">
+        <?= renderImg('solar_globe.png', 'lib', 'solar_globe_banner') ?>
         <div class="container">
             <div class="row">
-                <div class="col-xl-7 banner_wrapper">
+                <div class="col-10 col-xl-7 banner_wrapper">
                     <div class="free_solar_design">
                         <?= renderImg('free-solar-design.png', 'lib', 'mainImg') ?>
                     </div>
-                    <h1 class="fs-96 lh-0_76">The leaders in solar energy solutions</h1>
-                    <div class="fs-36 lh-1 py-5">Sydney's Solar Specialists. Top-quality<br> solar panel installation services in Sydney</div>
-                    <div class="row">
+                    <h1 class="fs-96 lh-0_76 heading">The leaders in solar energy solutions</h1>
+                    <div class="fs-36 lh-1 pt-3 pb-5 py-md-5 description">Sydney's Solar Specialists. Top-quality<br class="d-none d-md-block"> solar panel installation services in Sydney</div>
+                    <div class="row d-none d-md-flex">
                         <div class="col-auto">
                             <a href="tel:<?= $phone_number ?>" class="btn border-dark rounded-0 text-dark py-3 px-md-5">
                                 <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,6 +70,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="col d-flex align-items-end d-md-none">
+                    <?= renderImg('clean-energy-council-mob.png', 'logo', 'mob-clean-energy-council') ?>
+                </div>
             </div>
         </div>
     </div>
@@ -77,10 +81,10 @@
             <div class="row">
                 <div class="col-xl-7 brands_wrapper">
                     <div class="row justify-content-between">
-                        <div class="col-3">
-                            <div class="text-dark fs-36 lh-1">brands we work with</div>
+                        <div class="col-md-3">
+                            <div class="text-dark fs-36 lh-1 heading">brands we work with</div>
                         </div>
-                        <div class="col-8">
+                        <div class="col-12 col-md-8">
                             <div id="brands_slider">
                                 <div><?= renderImg('brand-1.png', 'logo') ?></div>
                                 <div><?= renderImg('brand-2.png', 'logo') ?></div>
@@ -99,11 +103,20 @@
 </header>
 
 <section class="government_assistance">
-    <div class="container">
+    <video id="governmentAssistanceVideo" width="100%" autoplay loop muted>
+        <source src="./assets/video/governmentAssistanceVideo.mp4" type="video/mp4">
+        <source src="./assets/video/governmentAssistanceVideo.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container position-relative">
         <div class="row align-items-end">
             <div class="col-xl-7 government_assistance_wrapper">
-                <div class="position-relative">
+                <div class="position-relative d-none d-md-block">
                     <?= renderImg('reliable-assistance-phone.png', 'lib', 'phone') ?>
+                    <?= renderImg('handcash.png', 'lib', 'handcash') ?>
+                </div>
+                <div class="position-relative">
+                    <?= renderImg('reliable-assistance-phone-mob.png', 'lib', 'phone') ?>
                     <?= renderImg('handcash.png', 'lib', 'handcash') ?>
                 </div>
             </div>
@@ -112,10 +125,12 @@
                     <?= renderImg('free_solar_design_white.png', 'lib', 'mainImg') ?>
                 </div>
                 <div class="fs-64 lh-1 text-white py-4">Government Assistance available NOW</div>
-                <div class="text-white fs-24 lh-1 pb-5">Top-quality solar panel installation<br> services in Sydney</div>
-                <a href="tel:<?= $phone_number ?>" class="btn border-white d-inline-flex rounded-0 text-white py-3 px-md-5">
-                    Enquire Now
-                </a>
+                <div class="text-white fs-24 lh-1 pb-md-5">Top-quality solar panel installation<br class="d-none d-md-block"> services in Sydney</div>
+                <div class="d-none d-md-block">
+                    <a href="tel:<?= $phone_number ?>" class="btn border-white d-inline-flex rounded-0 text-white py-3 px-md-5">
+                        Enquire Now
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -150,7 +165,7 @@
                     </div>
                 </div>
                 <div class="col-xl-5">
-                    <div class="solar_sheet_img">
+                    <div class="solar_sheet_img position-relative">
                         <?= renderImg('solar-sheets.png', 'lib') ?>
                     </div>
                     <div class="row gy-6 solar_sheets align-items-end">
@@ -243,7 +258,7 @@
                         <div class="w-100 d-flex justify-content-center pt-9"><?= renderImg('fancy-dollar.png', 'lib', 'fancy-dollar') ?></div>
                     </div>
                     <div class="advantage-2">
-                        <div class="fs-48 lh-1 pb-6">Decrease<br> Energy Costs</div>
+                        <div class="fs-48 lh-1 pb-6">Increase<br> Property Costs</div>
                         <a href="tel:<?= $phone_number ?>" class="btn border-white d-inline-flex rounded-0 text-white py-3 px-md-5">
                             Enquire Now
                         </a>

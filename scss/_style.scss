@@ -10,6 +10,10 @@ body {
         right: 0;
         top: 124px;
         z-index: 100;
+
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
     }
 }
 
@@ -21,11 +25,20 @@ header {
         position: absolute;
         top: 0;
         left: 0;
+
+        @include media-breakpoint-down(sm) {
+            height: 100%;
+            width: auto;
+        }
     }
 
     .navigation {
         position: relative;
         padding: 42px 0 32px;
+
+        @include media-breakpoint-down(sm) {
+            padding: 18px 0 8px;
+        }
 
         .btn {
             height: 48px;
@@ -38,10 +51,40 @@ header {
         border-top: 1px solid $dark;
         border-bottom: 1px solid $dark;
 
+        @include media-breakpoint-down(sm) {
+            h1.heading {
+                font-size: 38px !important;
+            }
+
+            .description {
+                font-size: 1.125rem !important;
+            }
+        }
+
+        .solar_globe_banner {
+            position: absolute;
+            right: 0;
+            top: 20px;
+            width: 65%;
+            z-index: 10;
+
+            @include media-breakpoint-up(md) {
+                display: none;
+            }
+        }
+
+        .mob-clean-energy-council {
+            padding: 33px 0;
+        }
+
         .banner_wrapper {
-            padding: 105px 0;
             border-right: 1px solid $dark;
             position: relative;
+            padding: 324px 12px 0;
+            
+            @include media-breakpoint-up(md) {
+                padding: 105px 0;
+            }
 
             .free_solar_design {
                 position: absolute;
@@ -51,6 +94,11 @@ header {
                 background: imgUrl('solar-elec.png', 'lib') center;
                 right: 70px;
                 top: 16px;
+
+                @include media-breakpoint-down(sm) {
+                    right: 120px;
+                    top: 48px;
+                }
 
                 .mainImg {
                     animation-name: rotate;
@@ -75,9 +123,23 @@ header {
     .brands {
         position: relative;
 
+        .heading {
+            @include media-breakpoint-down(sm) {
+                font-size: 1rem !important;
+                padding-bottom: 16px;
+            }
+        }
+
         .brands_wrapper {
             padding: 36px 0;
-            border-right: 1px solid $dark;
+
+            @include media-breakpoint-up(md) {
+                border-right: 1px solid $dark;
+            }
+
+            @include media-breakpoint-down(sm) {
+                padding: 16px 12px;
+            }
 
             #brands_slider {
                 .slick-track {
@@ -89,6 +151,10 @@ header {
                     display: flex;
                     align-items: center;
                     margin: 0 20px;
+
+                    @include media-breakpoint-down(sm) {
+                        margin: 0 10px;
+                    }
                 }
             }
         }
@@ -96,12 +162,30 @@ header {
 }
 
 section.government_assistance {
-    background: imgUrl('government_assistance.jpg');
-    background-size: cover;
+    position: relative;
+    overflow: hidden;
+
+    #governmentAssistanceVideo {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @include media-breakpoint-down(sm) {
+            height: 100%;
+            width: auto;
+        }
+    }
 
     .government_assistance_wrapper {
         padding: 114px 0 79px;
-        border-right: 1px solid $white;
+
+        @include media-breakpoint-up(md) {
+            border-right: 1px solid $white;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 114px 0 0;
+        }
 
         .handcash {
             position: absolute;
@@ -113,6 +197,10 @@ section.government_assistance {
             animation-duration: 1s;
             animation-timing-function: ease-in-out;
             animation-iteration-count: infinite;
+
+            @include media-breakpoint-down(sm) {
+                width: 41%;
+            }
         }
 
         @keyframes bounce {
@@ -141,6 +229,11 @@ section.government_assistance {
 
     .main_content {
         padding: 148px 64px;
+
+        @include media-breakpoint-down(sm) {
+            padding: 61px 12px;
+            text-align: center;
+        }
     }
 
     .free_solar_design {
@@ -164,6 +257,10 @@ section.government_assistance {
             100% {
                 transform: rotate(360deg);
             }
+        }
+
+        @include media-breakpoint-down(sm) {
+            display: none;
         }
     }
 }
@@ -270,6 +367,11 @@ section.advantage {
         flex-direction: column;
         justify-content: center;
         align-items: start;
+
+        @include media-breakpoint-down(sm) {
+            width: 192px;
+            height: 320px;
+        }
     }
 
     .servicing_areas {
@@ -346,7 +448,7 @@ footer {
         ul.footer_menu {
             list-style: none;
             padding-inline-start: 0;
-    
+
             li {
                 .nav-link {
                     font-size: 24px;
@@ -355,7 +457,7 @@ footer {
                     line-height: 1;
                     padding: 0;
                 }
-    
+
                 padding: 12px 0;
             }
         }
