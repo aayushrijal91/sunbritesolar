@@ -283,21 +283,22 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
-                <div class="fs-64 lh-1">Experience the dual<br> advantage</div>
+                <div class="text-end d-md-none pb-3"><?= renderImg('free-solar-static.png', 'lib') ?></div>
+                <div class="fs-64 lh-1 pb-4 pb-md-0">Experience the dual<br> advantage</div>
                 <div class="d-flex">
                     <div class="advantage-1">
-                        <div class="fs-48 lh-1 pb-6">Decrease<br> Energy Costs</div>
+                        <div class="fs-48 lh-1 pb-3 pb-md-6 heading">Decrease<br> Energy Costs</div>
                         <a href="tel:<?= $phone_number ?>" class="btn border-white d-inline-flex rounded-0 text-white py-3 px-md-5">
                             Enquire Now
                         </a>
-                        <div class="w-100 d-flex justify-content-center pt-9"><?= renderImg('fancy-dollar.png', 'lib', 'fancy-dollar') ?></div>
+                        <div class="w-100 d-flex justify-content-center pt-4 pt-md-9"><?= renderImg('fancy-dollar.png', 'lib', 'fancy-dollar') ?></div>
                     </div>
                     <div class="advantage-2">
-                        <div class="fs-48 lh-1 pb-6">Increase<br> Property Costs</div>
+                        <div class="fs-48 lh-1 pb-3 pb-md-6 heading">Increase<br> Property Costs</div>
                         <a href="tel:<?= $phone_number ?>" class="btn border-white d-inline-flex rounded-0 text-white py-3 px-md-5">
                             Enquire Now
                         </a>
-                        <div class="w-100 d-flex justify-content-center pt-9"><?= renderImg('fancy-property.png', 'lib') ?></div>
+                        <div class="w-100 d-flex justify-content-center pt-4 pt-md-9"><?= renderImg('fancy-property.png', 'lib') ?></div>
                     </div>
                 </div>
             </div>
@@ -305,6 +306,7 @@
     </div>
 
     <div class="servicing_areas">
+        <div class="pin"><?= renderImg('pin.png', 'lib') ?></div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-9">
