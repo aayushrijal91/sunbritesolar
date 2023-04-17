@@ -24,7 +24,7 @@ $("#testimonial_slider").slick({
     centerPadding: "120px",
     responsive: [
         {
-            breakpoint: 900,
+            breakpoint: 1100,
             settings: {
                 slidesToShow: 1,
             }

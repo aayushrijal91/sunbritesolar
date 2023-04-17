@@ -11,7 +11,7 @@ body {
         top: 124px;
         z-index: 100;
 
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(xl) {
             display: none;
         }
     }
@@ -26,7 +26,7 @@ header {
         top: 0;
         left: 0;
 
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(xl) {
             height: 100%;
             width: auto;
         }
@@ -35,6 +35,10 @@ header {
     .navigation {
         position: relative;
         padding: 42px 0 32px;
+
+        @include media-breakpoint-down(xl) {
+            padding: 32px 0;
+        }
 
         @include media-breakpoint-down(sm) {
             padding: 18px 0 8px;
@@ -69,6 +73,10 @@ header {
             z-index: 10;
 
             @include media-breakpoint-up(lg) {
+                width: 50%;
+            }
+
+            @include media-breakpoint-up(xl) {
                 display: none;
             }
         }
@@ -82,13 +90,16 @@ header {
             position: relative;
             padding: 324px 12px 0;
 
-
-            @include media-breakpoint-up(lg) {
-                padding: 105px 0;
-            }
-
             @include media-breakpoint-up(md) {
                 padding: 600px 12px 64px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                padding: 180px 12px 64px;
+            }
+
+            @include media-breakpoint-up(xl) {
+                padding: 105px 0;
             }
 
             .free_solar_design {
@@ -99,6 +110,11 @@ header {
                 background: imgUrl('solar-elec.png', 'lib') center;
                 right: 70px;
                 top: 16px;
+
+                @include media-breakpoint-down(xl) {
+                    right: 50px;
+                    top: 48px;
+                }
 
                 @include media-breakpoint-down(lg) {
                     right: 300px;
@@ -143,10 +159,14 @@ header {
         .brands_wrapper {
             padding: 36px 0;
 
-            @include media-breakpoint-up(md) {
+            @include media-breakpoint-only(lg) {
+                padding: 36px 12px;
+            }
+            
+            @include media-breakpoint-up(xl) {
                 border-right: 1px solid $dark;
             }
-
+            
             @include media-breakpoint-down(sm) {
                 padding: 16px 12px;
             }
@@ -180,7 +200,7 @@ section.government_assistance {
         top: 0;
         left: 0;
 
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(xl) {
             height: 100%;
             width: auto;
         }
@@ -250,7 +270,7 @@ section.government_assistance {
     .main_content {
         padding: 148px 64px;
 
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(xl) {
             padding: 0 48px 64px;
         }
 
@@ -310,6 +330,10 @@ section.renewable_energy {
             padding: 40px 12px;
 
             @include media-breakpoint-up(lg) {
+                padding: 40px 12px 117px;
+            }
+
+            @include media-breakpoint-up(xl) {
                 padding: 167px 0 117px;
             }
 
@@ -370,6 +394,10 @@ section.renewable_energy {
         .solar_sheet_img {
             margin-top: -50px;
             margin-left: -95px;
+
+            @include media-breakpoint-only(lg) {
+                margin-left: 0;
+            }
         }
     }
 }
@@ -523,6 +551,10 @@ section.advantage {
             }
         }
 
+        @include media-breakpoint-only(lg) {
+            padding: 80px 0 0;
+        }
+
         @include media-breakpoint-down(lg) {
             padding: 80px 0;
         }
@@ -642,7 +674,7 @@ footer {
     margin-bottom: 109px;
     padding-left: 145px;
 
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
         padding: 0 48px;
         margin-bottom: 37px;
     }
@@ -658,7 +690,7 @@ footer {
         top: 0;
         left: 0;
 
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(xl) {
             height: 100%;
             width: auto;
         }
