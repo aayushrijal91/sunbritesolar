@@ -306,6 +306,8 @@
     </div>
 
     <div class="servicing_areas">
+        <div class="bigpin"><?= renderImg('bigpin.png', 'lib') ?></div>
+        <div class="smallpin"><?= renderImg('smallpin.png', 'lib') ?></div>
         <div class="pin"><?= renderImg('pin.png', 'lib') ?></div>
         <div class="container">
             <div class="row justify-content-center">

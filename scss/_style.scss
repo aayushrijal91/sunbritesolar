@@ -545,6 +545,27 @@ section.advantage {
 
     .servicing_areas {
         padding: 128px 0;
+        position: relative;
+
+        .bigpin {
+            position: absolute;
+            top: -250px;
+            right: 0;
+
+            @include media-breakpoint-down(xxl) {
+                display: none;
+            }
+        }
+
+        .smallpin {
+            position: absolute;
+            left: 0;
+            bottom: -80px;
+            
+            @include media-breakpoint-down(xxl) {
+                display: none;
+            }
+        }
 
         .pin {
             text-align: end;
