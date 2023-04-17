@@ -15,16 +15,16 @@
                         <?= renderImg("logo.png", "logo") ?>
                     </a>
                 </div>
-                <div class="col-auto d-none d-md-block">
+                <div class="col-auto d-none d-lg-block">
                     <?= renderImg('clean-energy-council.png', 'logo') ?>
                 </div>
-                <div class="col-auto fs-24 d-none d-md-block">
+                <div class="col-auto fs-24 d-none d-lg-block">
                     Installs
                 </div>
-                <div class="col-auto fs-24 d-none d-md-block">
+                <div class="col-auto fs-24 d-none d-lg-block">
                     Repairs/Maintenance
                 </div>
-                <div class="col-auto d-none d-md-block">
+                <div class="col-auto d-none d-lg-block">
                     <div class="row justify-content-center justify-content-lg-end align-items-center">
                         <div class="col-12 col-md-auto">
                             <a href="tel:<?= $phone_number ?>" class="btn border-dark rounded-0 text-dark py-3 px-md-5">
@@ -56,7 +56,7 @@
                     <h1 class="fs-96 lh-0_76 heading">The leaders in solar energy solutions</h1>
                     <div class="fs-36 lh-1 pt-3 pb-5 py-md-5 description">Sydney's Solar Specialists. Top-quality<br class="d-none d-md-block"> solar panel installation services in Sydney</div>
                     <div class="row d-none d-md-flex">
-                        <div class="col-auto">
+                        <div class="col-auto d-none d-lg-block">
                             <a href="tel:<?= $phone_number ?>" class="btn border-dark rounded-0 text-dark py-3 px-md-5">
                                 <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5.79781 11.2858C7.89781 15.295 11.2811 18.5675 15.4082 20.6217L18.6166 17.505C19.0103 17.1225 19.5936 16.995 20.1041 17.165C21.7374 17.6892 23.502 17.9725 25.3103 17.9725C26.1124 17.9725 26.7686 18.61 26.7686 19.3892V24.3333C26.7686 25.1125 26.1124 25.75 25.3103 25.75C11.6166 25.75 0.518646 14.9692 0.518646 1.66667C0.518646 0.8875 1.1749 0.25 1.97698 0.25H7.08115C7.88323 0.25 8.53948 0.8875 8.53948 1.66667C8.53948 3.4375 8.83115 5.1375 9.37073 6.72417C9.53115 7.22 9.41448 7.7725 9.00615 8.16917L5.79781 11.2858Z" fill="#080F2B" />
@@ -71,7 +71,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col d-flex align-items-end d-md-none">
+                <div class="col d-flex align-items-end d-lg-none">
                     <?= renderImg('clean-energy-council-mob.png', 'logo', 'mob-clean-energy-council') ?>
                 </div>
             </div>
@@ -81,11 +81,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-7 brands_wrapper">
-                    <div class="row justify-content-between">
-                        <div class="col-md-3">
+                    <div class="row justify-content-between gy-md-4 gy-lg-0">
+                        <div class="col-lg-3">
                             <div class="text-dark fs-36 lh-1 heading">brands we work with</div>
                         </div>
-                        <div class="col-12 col-md-8">
+                        <div class="col-12 col-lg-8">
                             <div id="brands_slider">
                                 <div><?= renderImg('brand-1.png', 'logo') ?></div>
                                 <div><?= renderImg('brand-2.png', 'logo') ?></div>
@@ -141,7 +141,7 @@
     <div class="inner">
         <div class="container">
             <div class="row gy-7 gy-md-0">
-                <div class="col-10 col-xl-7 renewable_energy_wrapper">
+                <div class="col-10 col-md-11 col-xl-7 renewable_energy_wrapper">
                     <div class="row">
                         <div class="col-xl-10">
                             <div class="row justify-content-between align-items-end d-none d-md-flex">
@@ -223,8 +223,8 @@
             <div class="col-xl-11">
                 <div class="fs-64 text-black lh-1 pb-5 heading">Sunbrite<br class="d-md-none"> brings you</div>
 
-                <div class="row gx-lg-5 gy-4 gy-md-0">
-                    <div class="col-md-6">
+                <div class="row gx-lg-5 gy-4 gy-lg-0">
+                    <div class="col-lg-6">
                         <div class="offering-1">
                             <div class="row justify-content-between align-items-end w-100 m-0">
                                 <div class="col-auto">
@@ -248,7 +248,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <div class="offering-2">
                             <div class="row justify-content-between align-items-end w-100 m-0">
                                 <div class="col-auto">
@@ -284,7 +284,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="text-end d-md-none pb-3"><?= renderImg('free-solar-static.png', 'lib') ?></div>
-                <div class="fs-64 lh-1 pb-4 pb-md-0">Experience the dual<br> advantage</div>
+                <div class="fs-64 lh-1 pb-4 pb-md-5 pb-lg-0">Experience the dual<br> advantage</div>
                 <div class="d-flex">
                     <div class="advantage-1">
                         <div class="fs-48 lh-1 pb-3 pb-md-6 heading">Decrease<br> Energy Costs</div>
@@ -311,12 +311,12 @@
             <div class="row justify-content-center">
                 <div class="col-lg-9">
                     <div class="row align-items-center">
-                        <div class="col-md-6 text-tertiary">
+                        <div class="col-lg-6 text-tertiary">
                             <div class="row d-md-none">
                                 <div class="col-7 heading lh-1">Find a Sunbrite Solar technician near you</div>
                             </div>
                             <div class="fs-64 lh-0_76 d-none d-md-block">Find a Sunbrite Solar technician near you</div>
-                            <div class="pt-5 d-md-none"><?= renderImg('map.jpg', 'lib', 'w-100 rounded-26') ?></div>
+                            <div class="pt-5 d-lg-none"><?= renderImg('map.jpg', 'lib', 'w-100 rounded-26') ?></div>
                             <div class="fs-48 pt-4 pb-4">Areas we service</div>
                             <div class="row gy-3">
                                 <div class="col-12 fs-24 text-tertiary"><u>Macarthur</u></div>
@@ -325,7 +325,7 @@
                                 <div class="col-12 fs-24 text-tertiary"><u>Wollongong</u></div>
                             </div>
                         </div>
-                        <div class="col-md-6 d-none d-md-block">
+                        <div class="col-lg-6 d-none d-lg-block">
                             <?= renderImg('map.jpg', 'lib', 'w-100 rounded-54') ?>
                         </div>
                     </div>
@@ -436,7 +436,7 @@
                 <div class="government_benefits_inner">
                     <div class="wrapper">
                         <div class="row justify-content-center position-relative">
-                            <div class="col-8">
+                            <div class="col-8 col-md-10 col-lg-8">
                                 <div class="fs-64 lh-1 pb-4 pb-md-6 heading">Seize Government Benefits and Solar Rewards Today</div>
                                 <a href="tel:<?= $phone_number ?>" class="btn border-dark d-inline-flex rounded-0 text-dark py-3 px-md-5">
                                     Enquire Now
@@ -533,10 +533,10 @@
                 </div>
             </div>
             <div class="divider_line"></div>
-            <div class="fs-20 pt-4 pb-3 pb-md-5 copyright">
-                Copyright © 2023 Sunbrite Solar | Terms and Conditions | Privacy Policy Website by AiiMS Group Pty Ltd <a href="https://www.aiims.com.au/like-our-work/" target="_blank" class="ps-4 d-none d-md-inline"><?= renderImg('aiims1.png', 'logo') ?></a>
+            <div class="fs-20 pt-4 pb-3 pb-lg-5 copyright">
+                Copyright © 2023 Sunbrite Solar | Terms and Conditions | Privacy Policy Website by AiiMS Group Pty Ltd <a href="https://www.aiims.com.au/like-our-work/" target="_blank" class="ps-4 d-none d-lg-inline"><?= renderImg('aiims1.png', 'logo') ?></a>
             </div>
-            <div class="text-center d-md-none pb-5">
+            <div class="text-center d-lg-none pb-5">
                 <a href="https://www.aiims.com.au/like-our-work/" target="_blank" class="ps-4"><?= renderImg('aiims1.png', 'logo') ?></a>
             </div>
         </div>
