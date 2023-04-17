@@ -18,10 +18,10 @@
                 <div class="col-auto d-none d-lg-block">
                     <?= renderImg('clean-energy-council.png', 'logo') ?>
                 </div>
-                <div class="col-auto fs-24 d-none d-lg-block">
+                <div class="col-auto fs-24 d-none d-lg-block d-xl-none d-xxl-block">
                     Installs
                 </div>
-                <div class="col-auto fs-24 d-none d-lg-block">
+                <div class="col-auto fs-24 d-none d-lg-block d-xl-none d-xxl-block">
                     Repairs/Maintenance
                 </div>
                 <div class="col-auto d-none d-lg-block">
@@ -49,7 +49,7 @@
         <?= renderImg('solar_globe.png', 'lib', 'solar_globe_banner') ?>
         <div class="container">
             <div class="row">
-                <div class="col-10 col-lg-7 banner_wrapper">
+                <div class="col-10 col-lg-7 col-xl-9 col-xxl-7 banner_wrapper">
                     <div class="free_solar_design">
                         <?= renderImg('free-solar-design.png', 'lib', 'mainImg') ?>
                     </div>
@@ -80,7 +80,7 @@
     <div class="brands">
         <div class="container">
             <div class="row">
-                <div class="col-xl-7 brands_wrapper">
+                <div class="col-xl-9 col-xxl-7  brands_wrapper">
                     <div class="row justify-content-between gy-md-4 gy-xl-0">
                         <div class="col-xl-3">
                             <div class="text-dark fs-36 lh-1 heading">brands we work with</div>
@@ -143,7 +143,7 @@
             <div class="row gy-7 gy-md-0">
                 <div class="col-10 col-md-11 col-xl-7 renewable_energy_wrapper">
                     <div class="row">
-                        <div class="col-xl-10">
+                        <div class="col-xl-11 col-xxl-10">
                             <div class="row justify-content-between align-items-end d-none d-md-flex">
                                 <div class="col-auto"><?= renderImg('clean-energy-council.png', 'logo') ?></div>
                                 <div class="col-auto">
@@ -220,7 +220,7 @@
 <section class="offering">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-xl-11">
+            <div class="col-xxl-11">
                 <div class="fs-64 text-black lh-1 pb-5 heading">Sunbrite<br class="d-md-none"> brings you</div>
 
                 <div class="row gx-lg-5 gy-4 gy-xl-0">
@@ -282,7 +282,7 @@
 <section class="advantage">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-xl-8">
+            <div class="col-xl-9 col-xxl-8">
                 <div class="text-end d-md-none pb-3"><?= renderImg('free-solar-static.png', 'lib') ?></div>
                 <div class="fs-64 lh-1 pb-4 pb-md-5 pb-xl-0">Experience the dual<br> advantage</div>
                 <div class="d-flex">
@@ -309,7 +309,7 @@
         <div class="pin"><?= renderImg('pin.png', 'lib') ?></div>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xl-9">
+                <div class="col-xl-10 col-xxl-9">
                     <div class="row align-items-center">
                         <div class="col-lg-6 text-tertiary">
                             <div class="row d-md-none">
@@ -432,7 +432,7 @@
 <section class="government_benefits">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-xl-8">
+            <div class="col-xl-10 col-xxl-8">
                 <div class="government_benefits_inner">
                     <div class="wrapper">
                         <div class="row justify-content-center position-relative">

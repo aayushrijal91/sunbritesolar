@@ -24,6 +24,12 @@ $("#testimonial_slider").slick({
     centerPadding: "120px",
     responsive: [
         {
+            breakpoint: 1600,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
             breakpoint: 1100,
             settings: {
                 slidesToShow: 1,

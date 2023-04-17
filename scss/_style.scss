@@ -11,6 +11,10 @@ body {
         top: 124px;
         z-index: 100;
 
+        @include media-breakpoint-down(xxl) {
+            width: 500px;
+        }
+
         @include media-breakpoint-down(xl) {
             display: none;
         }
@@ -25,8 +29,8 @@ header {
         position: absolute;
         top: 0;
         left: 0;
-
-        @include media-breakpoint-down(xl) {
+        
+        @include media-breakpoint-down(xxl) {
             height: 100%;
             width: auto;
         }
@@ -200,7 +204,7 @@ section.government_assistance {
         top: 0;
         left: 0;
 
-        @include media-breakpoint-down(xl) {
+        @include media-breakpoint-down(xxl) {
             height: 100%;
             width: auto;
         }
@@ -673,6 +677,10 @@ footer {
     overflow: hidden;
     margin-bottom: 109px;
     padding-left: 145px;
+
+    @include media-breakpoint-down(xxl) {
+        padding-left: 48px;
+    }
 
     @include media-breakpoint-down(xl) {
         padding: 0 48px;
