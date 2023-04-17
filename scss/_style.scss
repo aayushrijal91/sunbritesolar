@@ -81,7 +81,7 @@ header {
             border-right: 1px solid $dark;
             position: relative;
             padding: 324px 12px 0;
-            
+
             @include media-breakpoint-up(md) {
                 padding: 105px 0;
             }
@@ -266,15 +266,42 @@ section.government_assistance {
 }
 
 section.renewable_energy {
-    background: imgUrl('renewable-energy.jpg');
-    background-size: cover;
+    background: imgUrl('renewable-energy-sm.jpg');
+    background-size: contain;
+
+    @include media-breakpoint-up(md) {
+        background: imgUrl('renewable-energy.jpg');
+        background-size: cover;
+    }
 
     .inner {
-        background: imgUrl('marble.png') right bottom;
+        background: imgUrl('marble-sm.png') right top 300px;
+
+        @include media-breakpoint-up(md) {
+            background: imgUrl('marble.png') right bottom;
+        }
 
         .renewable_energy_wrapper {
             border-right: 1px solid $dark;
-            padding: 167px 0 117px;
+            padding: 40px 12px;
+
+            @include media-breakpoint-up(md) {
+                padding: 167px 0 117px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                .heading {
+                    font-size: 38px !important;
+                }
+
+                .description {
+                    font-size: 1.125rem !important;
+                }
+
+                .button {
+                    font-size: 1.25rem !important;
+                }
+            }
 
             .free_solar_design {
                 display: inline-flex;
@@ -306,6 +333,10 @@ section.renewable_energy {
         .solar_sheets {
             padding: 42px 64px 90px;
 
+            @include media-breakpoint-down(sm) {
+                padding: 42px 26px;
+            }
+
         }
 
         .solar_sheet_img {
@@ -318,12 +349,28 @@ section.renewable_energy {
 section.offering {
     padding: 104px 0;
 
+    @include media-breakpoint-down(sm) {
+        padding: 40px 0;
+
+        .heading {
+            font-size: 32px !important;
+        }
+    }
+
     .offering-1 {
         background: #ff8800 imgUrl('cartoon-sun.png', 'lib') top 34px right 34px;
+
+        @include media-breakpoint-down(sm) {
+            background-size: 40%;
+        }
     }
 
     .offering-2 {
         background: #58D20D imgUrl('cartoon-solar.png', 'lib') center right 34px;
+
+        @include media-breakpoint-down(sm) {
+            background-size: 60%;
+        }
     }
 
     .offering-1,
@@ -334,6 +381,28 @@ section.offering {
         padding: 37px 24px 37px 68px;
         display: flex;
         align-items: end;
+
+        .sm_text {
+            font-size: 36px;
+        }
+
+        .lg_text {
+            font-size: 48px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            border-radius: 24px;
+            padding: 16px 24px;
+            height: 245px;
+
+            .sm_text {
+                font-size: 16px;
+            }
+
+            .lg_text {
+                font-size: 22px;
+            }
+        }
     }
 }
 
@@ -376,6 +445,14 @@ section.advantage {
 
     .servicing_areas {
         padding: 128px 0;
+
+        @include media-breakpoint-down(sm) {
+            padding: 128px 0 0;
+
+            .heading {
+                font-size: 40px !important;
+            }
+        }
     }
 }
 
@@ -394,36 +471,80 @@ section.advantage {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        .heading {
+            font-size: 32px;
+        }
+
+        .description {
+            font-size: 18px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 22px 20px;
+            margin: 0 9px;
+
+            .heading {
+                font-size: 18px;
+            }
+
+            .description {
+                font-size: 14px;
+            }
+        }
     }
 }
 
 section.government_benefits {
     padding: 142px 0;
 
+    @include media-breakpoint-down(sm) {
+        padding: 44px 0 38px;
+    }
+
     .government_benefits_inner {
         background: imgUrl('government_benefits.jpg');
         background-size: cover;
         border-radius: 54px;
-        padding: 192px 16px;
         text-align: center;
         position: relative;
 
-        .cartoon_hand_elec {
-            position: absolute;
-            top: 30px;
-            right: 45px;
+        @include media-breakpoint-down(sm) {
+            border-radius: 20px;
         }
 
-        .cartoon_solar_panel {
-            position: absolute;
-            bottom: 10px;
-            left: 0;
+        .wrapper {
+            background: imgUrl('government_benefits_inner.png') center;
+            background-size: contain;
+            padding: 192px 16px;
+
+            @include media-breakpoint-down(sm) {
+                padding: 55px 16px;
+
+                .btn {
+                    height: 23px;
+                }
+
+                .heading {
+                    font-size: 19px !important;
+                }
+            }
+
         }
 
         .playButton {
             position: absolute;
             right: 45px;
             bottom: 38px;
+
+            @include media-breakpoint-down(sm) {
+                right: 0;
+                bottom: 16px;
+
+                img {
+                    width: 50%;
+                }
+            }
         }
     }
 }
@@ -436,14 +557,33 @@ footer {
     margin-bottom: 109px;
     padding-left: 145px;
 
+    @include media-breakpoint-down(sm) {
+        border-radius: 20px;
+        padding: 0 16px;
+        margin-bottom: 37px;
+    }
+
     #footerVideo {
         position: absolute;
         top: 0;
         left: 0;
+
+        @include media-breakpoint-down(sm) {
+            height: 100%;
+            width: auto;
+        }
     }
 
     .top_row {
         padding: 121px 0 42px;
+
+        @include media-breakpoint-down(sm) {
+            padding: 24px 16px;
+
+            .subHeading {
+                font-size: 16px !important;
+            }
+        }
 
         ul.footer_menu {
             list-style: none;
@@ -456,6 +596,10 @@ footer {
                     text-decoration: none;
                     line-height: 1;
                     padding: 0;
+
+                    @include media-breakpoint-down(sm) {
+                        font-size: 16px;
+                    }
                 }
 
                 padding: 12px 0;
@@ -472,5 +616,16 @@ footer {
         position: absolute;
         bottom: 0;
         right: 0;
+
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+    }
+
+    .copyright {
+        @include media-breakpoint-down(sm) {
+            font-size: 10px !important;
+            text-align: center;
+        }
     }
 }

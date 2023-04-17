@@ -21,7 +21,16 @@ $("#testimonial_slider").slick({
     slidesToScroll: 1,
     arrows: false,
     centerMode: true,
-    centerPadding: "120px"
+    centerPadding: "120px",
+    responsive: [
+        {
+            breakpoint: 540,
+            settings: {
+                slidesToShow: 1,
+                centerPadding: "30px"
+            }
+        }
+    ]
 })
 
 document.querySelectorAll('a[href="#form"]').forEach(function (anchor) {
