@@ -2,6 +2,19 @@
 @return url("../images/" + $path + "/" + $file) no-repeat;
 }
 
+.sticky-menu {
+    width: 100%;
+    background-color: $dark;
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+}
+
+
 #form {
     form {
         .modal-title, .btn, .form-control {
@@ -724,7 +737,7 @@ footer {
     @include media-breakpoint-down(sm) {
         border-radius: 20px;
         padding: 0 16px;
-        margin-bottom: 37px;
+        margin-bottom: 100px;
     }
 
     #footerVideo {
