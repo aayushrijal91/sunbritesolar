@@ -10,7 +10,7 @@
 				</a>
 			</div>
 			<div class="col-6">
-				<a href="#form" class="btn btn-primary rounded-0 text-white py-3">Enquire Now</a>
+				<a href="#form" data-bs-toggle="modal" data-bs-target="#form" class="btn btn-primary rounded-0 text-white py-3">Enquire Now</a>
 			</div>
 		</div>
 	</div>
