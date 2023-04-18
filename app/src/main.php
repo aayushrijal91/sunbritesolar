@@ -24,20 +24,9 @@
                         <div class="col-12">
                             <select name="service" class="form-control form-select" required>
                                 <option selected disabled>Service Required</option>
-                                <option>General Plumbing</option>
-                                <option>247 Emergency</option>
-                                <option>Burst & Leaking Pipes</option>
-                                <option>Blockages</option>
-                                <option>CCTV inspections</option>
-                                <option>Gas safety checks</option>
-                                <option>Water leak detection</option>
-                                <option>Water leak repairs</option>
-                                <option>Bathroom renovations</option>
-                                <option>HWS installations</option>
-                                <option>HWS maintenance repairs</option>
-                                <option>Roofing</option>
-                                <option>Roofing Leaks</option>
-                                <option>Water filter installations</option>
+                                <option>Solar Panel Installation</option>
+                                <option>Solar Panel Repairs</option>
+                                <option>Solar Panel Maintenance</option>
                             </select>
                         </div>
                     </div>
