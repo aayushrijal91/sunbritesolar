@@ -45,7 +45,7 @@ $("#testimonial_slider").slick({
     ]
 })
 
-document.querySelectorAll('a[href="#form"]').forEach(function (anchor) {
+document.querySelectorAll('a[href="#form"], a[href="#installations"], a[href="#rebates"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 

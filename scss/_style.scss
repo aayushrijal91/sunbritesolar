@@ -2,6 +2,34 @@
 @return url("../images/" + $path + "/" + $file) no-repeat;
 }
 
+#form {
+    form {
+        .modal-title, .btn, .form-control {
+            font-family: $font-dmsans;
+        }
+
+        input, select {
+            min-height: 54px;
+
+            &::placeholder {
+                font-weight: 300;
+                opacity: 0.5;
+
+            }
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+
+        button {
+            height: 54px;
+            font-size: 20px;
+        }
+    }
+}
+
 body {
     position: relative;
 
@@ -672,21 +700,6 @@ section.government_benefits {
                 }
             }
 
-        }
-
-        .playButton {
-            position: absolute;
-            right: 45px;
-            bottom: 38px;
-
-            @include media-breakpoint-down(sm) {
-                right: 0;
-                bottom: 16px;
-
-                img {
-                    width: 50%;
-                }
-            }
         }
     }
 }
