@@ -264,50 +264,126 @@
 
                 <div class="row gx-lg-5 gy-4 gy-xl-0">
                     <div class="col-xl-6">
-                        <div class="offering-1">
-                            <div class="row justify-content-between align-items-end w-100 m-0">
-                                <div class="col-auto">
-                                    <div class="sm_text lh-1">Solar</div>
-                                    <div class="lg_text lh-1">Installation</div>
+                        <div class="offering-1 offering_slider">
+                            <div class="first">
+                                <div class="d-flex justify-content-end cartoon"><?= renderImg('cartoon-sun.png', 'lib') ?></div>
+                                <div class="row justify-content-between align-items-end w-100 m-0">
+                                    <div class="col-auto">
+                                        <div class="sm_text lh-1">Solar</div>
+                                        <div class="lg_text lh-1">Installation</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="javascript:void(0)" class="slideToNext d-md-none">
+                                            <svg width="62" height="28" viewBox="0 0 62 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M51.8186 14.4717C51.9942 14.2962 51.9942 14.0115 51.8186 13.8359L48.9572 10.9745C48.7816 10.7989 48.4969 10.7989 48.3213 10.9745C48.1457 11.15 48.1457 11.4347 48.3213 11.6103L50.8648 14.1538L48.3213 16.6973C48.1457 16.8729 48.1457 17.1576 48.3213 17.3332C48.4969 17.5088 48.7816 17.5088 48.9572 17.3332L51.8186 14.4717ZM0.243042 14.6034H51.5007V13.7042H0.243042V14.6034Z" fill="#080F2A" />
+                                                <circle cx="48.2828" cy="14.1539" r="12.8478" stroke="#080F2B" stroke-width="0.899257" />
+                                            </svg>
+                                        </a>
+                                        <a href="javascript:void(0)" class="slideToNext d-none d-md-block">
+                                            <svg width="137" height="60" viewBox="0 0 137 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M115.112 30.7718C115.503 30.3813 115.503 29.7481 115.112 29.3576L108.748 22.9936C108.358 22.6031 107.724 22.6031 107.334 22.9936C106.943 23.3842 106.943 24.0173 107.334 24.4078L112.991 30.0647L107.334 35.7216C106.943 36.1121 106.943 36.7452 107.334 37.1358C107.724 37.5263 108.358 37.5263 108.748 37.1358L115.112 30.7718ZM0.404907 31.0647H114.405V29.0647H0.404907V31.0647Z" fill="#080F2A" />
+                                                <circle cx="107.248" cy="30.0648" r="28.5743" stroke="#080F2B" stroke-width="2" />
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="col-auto">
-                                    <a href="#form" data-bs-toggle="modal" data-bs-target="#form" class="d-md-none">
-                                        <svg width="62" height="28" viewBox="0 0 62 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M51.8186 14.4717C51.9942 14.2962 51.9942 14.0115 51.8186 13.8359L48.9572 10.9745C48.7816 10.7989 48.4969 10.7989 48.3213 10.9745C48.1457 11.15 48.1457 11.4347 48.3213 11.6103L50.8648 14.1538L48.3213 16.6973C48.1457 16.8729 48.1457 17.1576 48.3213 17.3332C48.4969 17.5088 48.7816 17.5088 48.9572 17.3332L51.8186 14.4717ZM0.243042 14.6034H51.5007V13.7042H0.243042V14.6034Z" fill="#080F2A" />
-                                            <circle cx="48.2828" cy="14.1539" r="12.8478" stroke="#080F2B" stroke-width="0.899257" />
-                                        </svg>
-                                    </a>
-                                    <a href="#form" data-bs-toggle="modal" data-bs-target="#form" class="d-none d-md-block">
-                                        <svg width="137" height="60" viewBox="0 0 137 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M115.112 30.7718C115.503 30.3813 115.503 29.7481 115.112 29.3576L108.748 22.9936C108.358 22.6031 107.724 22.6031 107.334 22.9936C106.943 23.3842 106.943 24.0173 107.334 24.4078L112.991 30.0647L107.334 35.7216C106.943 36.1121 106.943 36.7452 107.334 37.1358C107.724 37.5263 108.358 37.5263 108.748 37.1358L115.112 30.7718ZM0.404907 31.0647H114.405V29.0647H0.404907V31.0647Z" fill="#080F2A" />
-                                            <circle cx="107.248" cy="30.0648" r="28.5743" stroke="#080F2B" stroke-width="2" />
-                                        </svg>
-                                    </a>
+                            </div>
+                            <div class="second">
+                                <div class="row align-items-center">
+                                    <div class="col-4 col-md-2">
+                                        <?= renderImg('cartoon-sun.png', 'lib') ?>
+                                    </div>
+                                    <div class="col">
+                                        <div class="sm_text lh-1">Solar</div>
+                                        <div class="lg_text lh-1">Installation</div>
+                                    </div>
+                                </div>
+                                <div class="description py-3">
+                                    <p>At Sunbrite Solar, we provide top-quality solar panel installation services in Sydney. Our experienced team will assess your property, provide a customized solar solution, and use only the highest-quality materials to ensure optimal performance.</p>
+
+                                    <p>We take care of all necessary permits and paperwork for a stress-free installation process. Choose Sunbrite Solar for a reliable and efficient solar panel installation.</p>
+                                </div>
+                                <div class="row align-items-center justify-content-between">
+                                    <div class="col-auto">
+                                        <a href="#form" data-bs-toggle="modal" data-bs-target="#form" class="text-dark fs-24">Enquire Now</a>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="javascript:void(0)" class="slideToPrev d-none d-md-block">
+                                            <svg width="138" height="61" viewBox="0 0 138 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.3154 29.7443C21.9248 30.1348 21.9248 30.768 22.3154 31.1585L28.6793 37.5225C29.0698 37.913 29.703 37.913 30.0935 37.5225C30.4841 37.132 30.4841 36.4988 30.0935 36.1083L24.4367 30.4514L30.0935 24.7946C30.4841 24.404 30.4841 23.7709 30.0935 23.3803C29.703 22.9898 29.0698 22.9898 28.6793 23.3803L22.3154 29.7443ZM137.022 29.4514L23.0225 29.4514L23.0225 31.4514L137.022 31.4514L137.022 29.4514Z" fill="#080F2A" />
+                                                <circle cx="30.1796" cy="30.4514" r="28.5743" transform="rotate(-180 30.1796 30.4514)" stroke="#080F2B" stroke-width="2" />
+                                            </svg>
+                                        </a>
+                                        <a href="javascript:void(0)" class="slideToPrev d-md-none">
+                                            <svg width="62" height="28" viewBox="0 0 62 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0049 13.8361C9.82927 14.0117 9.82927 14.2964 10.0049 14.472L12.8663 17.3334C13.0419 17.509 13.3266 17.509 13.5022 17.3334C13.6777 17.1578 13.6777 16.8731 13.5022 16.6975L10.9587 14.1541L13.5022 11.6106C13.6777 11.435 13.6777 11.1503 13.5022 10.9747C13.3266 10.7991 13.0419 10.7991 12.8663 10.9747L10.0049 13.8361ZM61.5804 13.7044L10.3228 13.7044V14.6037L61.5804 14.6037V13.7044Z" fill="#080F2A" />
+                                                <circle cx="13.5407" cy="14.154" r="12.8478" transform="rotate(-180 13.5407 14.154)" stroke="#080F2B" stroke-width="0.899257" />
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-6">
-                        <div class="offering-2">
-                            <div class="row justify-content-between align-items-end w-100 m-0">
-                                <div class="col-auto">
-                                    <div class="sm_text lh-1">Solar</div>
-                                    <div class="lg_text lh-1">Repair &</div>
-                                    <div class="lg_text lh-1">Installation</div>
+                        <div class="offering-2 offering_slider">
+                            <div class="first">
+                                <div class="d-flex justify-content-end mb-md-n5 cartoon"><?= renderImg('cartoon-solar.png', 'lib') ?></div>
+                                <div class="row justify-content-between align-items-end w-100 m-0">
+                                    <div class="col-auto">
+                                        <div class="sm_text lh-1">Solar</div>
+                                        <div class="lg_text lh-1">Repair &</div>
+                                        <div class="lg_text lh-1">Installation</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="javascript:void(0)" class="slideToNext d-md-none">
+                                            <svg width="62" height="28" viewBox="0 0 62 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M51.8186 14.4717C51.9942 14.2962 51.9942 14.0115 51.8186 13.8359L48.9572 10.9745C48.7816 10.7989 48.4969 10.7989 48.3213 10.9745C48.1457 11.15 48.1457 11.4347 48.3213 11.6103L50.8648 14.1538L48.3213 16.6973C48.1457 16.8729 48.1457 17.1576 48.3213 17.3332C48.4969 17.5088 48.7816 17.5088 48.9572 17.3332L51.8186 14.4717ZM0.243042 14.6034H51.5007V13.7042H0.243042V14.6034Z" fill="#080F2A" />
+                                                <circle cx="48.2828" cy="14.1539" r="12.8478" stroke="#080F2B" stroke-width="0.899257" />
+                                            </svg>
+                                        </a>
+                                        <a href="javascript:void(0)" class="slideToNext d-none d-md-block">
+                                            <svg width="137" height="60" viewBox="0 0 137 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M115.112 30.7718C115.503 30.3813 115.503 29.7481 115.112 29.3576L108.748 22.9936C108.358 22.6031 107.724 22.6031 107.334 22.9936C106.943 23.3842 106.943 24.0173 107.334 24.4078L112.991 30.0647L107.334 35.7216C106.943 36.1121 106.943 36.7452 107.334 37.1358C107.724 37.5263 108.358 37.5263 108.748 37.1358L115.112 30.7718ZM0.404907 31.0647H114.405V29.0647H0.404907V31.0647Z" fill="#080F2A" />
+                                                <circle cx="107.248" cy="30.0648" r="28.5743" stroke="#080F2B" stroke-width="2" />
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="col-auto">
-                                    <a href="#form" data-bs-toggle="modal" data-bs-target="#form" class="d-md-none">
-                                        <svg width="62" height="28" viewBox="0 0 62 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M51.8186 14.4717C51.9942 14.2962 51.9942 14.0115 51.8186 13.8359L48.9572 10.9745C48.7816 10.7989 48.4969 10.7989 48.3213 10.9745C48.1457 11.15 48.1457 11.4347 48.3213 11.6103L50.8648 14.1538L48.3213 16.6973C48.1457 16.8729 48.1457 17.1576 48.3213 17.3332C48.4969 17.5088 48.7816 17.5088 48.9572 17.3332L51.8186 14.4717ZM0.243042 14.6034H51.5007V13.7042H0.243042V14.6034Z" fill="#080F2A" />
-                                            <circle cx="48.2828" cy="14.1539" r="12.8478" stroke="#080F2B" stroke-width="0.899257" />
-                                        </svg>
-                                    </a>
-                                    <a href="#form" data-bs-toggle="modal" data-bs-target="#form" class="d-none d-md-block">
-                                        <svg width="137" height="60" viewBox="0 0 137 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M115.112 30.7718C115.503 30.3813 115.503 29.7481 115.112 29.3576L108.748 22.9936C108.358 22.6031 107.724 22.6031 107.334 22.9936C106.943 23.3842 106.943 24.0173 107.334 24.4078L112.991 30.0647L107.334 35.7216C106.943 36.1121 106.943 36.7452 107.334 37.1358C107.724 37.5263 108.358 37.5263 108.748 37.1358L115.112 30.7718ZM0.404907 31.0647H114.405V29.0647H0.404907V31.0647Z" fill="#080F2A" />
-                                            <circle cx="107.248" cy="30.0648" r="28.5743" stroke="#080F2B" stroke-width="2" />
-                                        </svg>
-                                    </a>
+                            </div>
+                            <div class="second">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <?= renderImg('tools.png', 'lib') ?>
+                                    </div>
+                                    <div class="col">
+                                        <div class="sm_text lh-1">Solar</div>
+                                        <div class="lg_text lh-1">Repair &</div>
+                                        <div class="lg_text lh-1">Installation</div>
+                                    </div>
+                                </div>
+                                <div class="description py-3">
+                                    <p>At Sunbrite Solar, we understand the importance of keeping your solar panels operating at their best. That's why we offer expert solar panel repairs and maintenance services in Sydney. Our team of experienced professionals will perform a thorough inspection of your system and identify any issues that need attention.</p>
+                                    <p>We use only the highest-quality materials to ensure that your panels are repaired to the highest standard. Regular maintenance can help extend the life of your solar panels and improve their performance, saving you money in the long run. Choose Sunbrite Solar for reliable and efficient solar panel repairs and maintenance.</p>
+                                </div>
+                                <div class="row align-items-center justify-content-between">
+                                    <div class="col-auto">
+                                        <a href="#form" data-bs-toggle="modal" data-bs-target="#form" class="text-dark fs-24">Enquire Now</a>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="javascript:void(0)" class="slideToPrev d-none d-md-block">
+                                            <svg width="138" height="61" viewBox="0 0 138 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.3154 29.7443C21.9248 30.1348 21.9248 30.768 22.3154 31.1585L28.6793 37.5225C29.0698 37.913 29.703 37.913 30.0935 37.5225C30.4841 37.132 30.4841 36.4988 30.0935 36.1083L24.4367 30.4514L30.0935 24.7946C30.4841 24.404 30.4841 23.7709 30.0935 23.3803C29.703 22.9898 29.0698 22.9898 28.6793 23.3803L22.3154 29.7443ZM137.022 29.4514L23.0225 29.4514L23.0225 31.4514L137.022 31.4514L137.022 29.4514Z" fill="#080F2A" />
+                                                <circle cx="30.1796" cy="30.4514" r="28.5743" transform="rotate(-180 30.1796 30.4514)" stroke="#080F2B" stroke-width="2" />
+                                            </svg>
+                                        </a>
+                                        <a href="javascript:void(0)" class="slideToPrev d-md-none">
+                                            <svg width="62" height="28" viewBox="0 0 62 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0049 13.8361C9.82927 14.0117 9.82927 14.2964 10.0049 14.472L12.8663 17.3334C13.0419 17.509 13.3266 17.509 13.5022 17.3334C13.6777 17.1578 13.6777 16.8731 13.5022 16.6975L10.9587 14.1541L13.5022 11.6106C13.6777 11.435 13.6777 11.1503 13.5022 10.9747C13.3266 10.7991 13.0419 10.7991 12.8663 10.9747L10.0049 13.8361ZM61.5804 13.7044L10.3228 13.7044V14.6037L61.5804 14.6037V13.7044Z" fill="#080F2A" />
+                                                <circle cx="13.5407" cy="14.154" r="12.8478" transform="rotate(-180 13.5407 14.154)" stroke="#080F2B" stroke-width="0.899257" />
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -492,75 +568,73 @@
 </section>
 
 
-<div class="container">
-    <footer>
-        <video id="footerVideo" width="100%" autoplay loop muted>
-            <source src="./assets/video/header.mp4" type="video/mp4">
-            <source src="./assets/video/header.webm" type="video/webm">
-            Your browser does not support the video tag.
-        </video>
-        <div class="position-relative">
-            <div class="row top_row justify-content-center justify-content-md-start">
-                <div class="col-9 col-xl-4 text-center text-md-start">
-                    <a href="./"><?= renderImg('logo.png', 'logo') ?></a>
-                    <div class="fs-36 pt-3 pt-md-5 pb-md-6 subHeading">Sydney's Go-To Solar</div>
-                    <?= renderImg('clean-energy-council.png', 'logo', 'd-none d-md-block') ?>
-                </div>
-                <div class="col-xl-4">
-                    <div class="row gx-md-5 gx-xl-7">
-                        <div class="col-md-auto">
-                            <div class="fs-26 fw-700 pt-5 pb-3 py-md-5">Quick Links</div>
-                            <ul class="footer_menu">
-                                <li><a href="#rebates" class="nav-link">Rebates</a></li>
-                                <li><a href="#installations" class="nav-link">Services</a></li>
-                                <li><a href="#installations" class="nav-link">Installs</a></li>
-                                <li><a href="#installations" class="nav-link">Repairs</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md col-lg-5 col-xl">
-                            <div class="fs-26 fw-700 py-3 py-md-5">Contact</div>
-                            <ul class="footer_menu">
-                                <li><a href="tel:<?= $phone_number ?>" class="nav-link"><?= $phone_number ?></a></li>
-                                <li><a href="mailto:<?= $admin_email ?>" class="nav-link"><?= $admin_email ?></a></li>
-                                <li>
-                                    <div class="nav-link">Unit 3/69 Topham Rd, Smeaton Grange NSW 2570</div>
-                                </li>
-                                <li>
-                                    <div class="nav-link">
-                                        Mon - Fri 7am - 7pm
-                                        <br>Sat 8am - 5pm
-                                        <br>Sunday - Closed
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+<footer>
+    <video id="footerVideo" width="100%" autoplay loop muted>
+        <source src="./assets/video/header.mp4" type="video/mp4">
+        <source src="./assets/video/header.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+    <div class="position-relative">
+        <div class="row top_row justify-content-center justify-content-md-start">
+            <div class="col-9 col-xl-4 text-center text-md-start">
+                <a href="./"><?= renderImg('logo.png', 'logo') ?></a>
+                <div class="fs-36 pt-3 pt-md-5 pb-md-6 subHeading">Sydney's Go-To Solar</div>
+                <?= renderImg('clean-energy-council.png', 'logo', 'd-none d-md-block') ?>
+            </div>
+            <div class="col-xl-4">
+                <div class="row gx-md-5 gx-xl-7">
+                    <div class="col-md-auto">
+                        <div class="fs-26 fw-700 pt-5 pb-3 py-md-5">Quick Links</div>
+                        <ul class="footer_menu">
+                            <li><a href="#rebates" class="nav-link">Rebates</a></li>
+                            <li><a href="#installations" class="nav-link">Services</a></li>
+                            <li><a href="#installations" class="nav-link">Installs</a></li>
+                            <li><a href="#installations" class="nav-link">Repairs</a></li>
+                        </ul>
                     </div>
-                    <div class="row align-items-center gx-4 gx-md-5 pt-4 pt-md-5">
-                        <div class="col-auto">
-                            <a href="https://www.facebook.com/Sunbritesolar/" class="facebook" target="_blank">
-                                <svg width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9.10153 24.209V13.2615H12.9611L13.539 8.99499H9.10142V6.27103C9.10142 5.03578 9.46165 4.19403 11.3222 4.19403L13.6952 4.19297V0.37708C13.2847 0.325179 11.8761 0.208984 10.2374 0.208984C6.81606 0.208984 4.47374 2.19722 4.47374 5.84862V8.99499H0.604248V13.2615H4.47374V24.2089H9.10153V24.209Z" fill="#080F2B" />
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="col-auto">
-                            <a href="https://www.instagram.com/sunbritesolar" class="instagram" target="_blank">
-                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.816406 12.209C0.816406 7.41546 0.816406 5.01871 1.95866 3.29239C2.46873 2.5215 3.12892 1.86131 3.89981 1.35124C5.62613 0.208984 8.02289 0.208984 12.8164 0.208984C17.6099 0.208984 20.0067 0.208984 21.733 1.35124C22.5039 1.86131 23.1641 2.5215 23.6742 3.29239C24.8164 5.01871 24.8164 7.41546 24.8164 12.209C24.8164 17.0025 24.8164 19.3993 23.6742 21.1256C23.1641 21.8965 22.5039 22.5567 21.733 23.0667C20.0067 24.209 17.6099 24.209 12.8164 24.209C8.02289 24.209 5.62613 24.209 3.89981 23.0667C3.12892 22.5567 2.46873 21.8965 1.95866 21.1256C0.816406 19.3993 0.816406 17.0025 0.816406 12.209ZM19.0287 12.2089C19.0287 15.64 16.2472 18.4214 12.8161 18.4214C9.38503 18.4214 6.60358 15.64 6.60358 12.2089C6.60358 8.77779 9.38503 5.99633 12.8161 5.99633C16.2472 5.99633 19.0287 8.77779 19.0287 12.2089ZM12.8161 16.3195C15.0864 16.3195 16.9268 14.4791 16.9268 12.2089C16.9268 9.93862 15.0864 8.09821 12.8161 8.09821C10.5459 8.09821 8.70545 9.93862 8.70545 12.2089C8.70545 14.4791 10.5459 16.3195 12.8161 16.3195ZM19.274 7.14397C20.0802 7.14397 20.7338 6.49042 20.7338 5.68421C20.7338 4.878 20.0802 4.22445 19.274 4.22445C18.4678 4.22445 17.8143 4.878 17.8143 5.68421C17.8143 6.49042 18.4678 7.14397 19.274 7.14397Z" fill="#080F2B" />
-                                </svg>
-                            </a>
-                        </div>
+                    <div class="col-md col-lg-5 col-xl">
+                        <div class="fs-26 fw-700 py-3 py-md-5">Contact</div>
+                        <ul class="footer_menu">
+                            <li><a href="tel:<?= $phone_number ?>" class="nav-link"><?= $phone_number ?></a></li>
+                            <li><a href="mailto:<?= $admin_email ?>" class="nav-link"><?= $admin_email ?></a></li>
+                            <li>
+                                <div class="nav-link">Unit 3/69 Topham Rd, Smeaton Grange NSW 2570</div>
+                            </li>
+                            <li>
+                                <div class="nav-link">
+                                    Mon - Fri 7am - 7pm
+                                    <br>Sat 8am - 5pm
+                                    <br>Sunday - Closed
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="divider_line"></div>
-            <div class="fs-20 pt-4 pb-3 pb-lg-5 copyright">
-                Copyright © 2023 Sunbrite Solar | Terms and Conditions | Privacy Policy <br class="d-none d-lg-block d-xl-none"> Website by AiiMS Group Pty Ltd <a href="https://www.aiims.com.au/like-our-work/" target="_blank" class="ps-4 d-none d-lg-inline"><?= renderImg('aiims1.png', 'logo') ?></a>
-            </div>
-            <div class="text-center d-lg-none pb-5">
-                <a href="https://www.aiims.com.au/like-our-work/" target="_blank" class="ps-4"><?= renderImg('aiims1.png', 'logo') ?></a>
+                <div class="row align-items-center gx-4 gx-md-5 pt-4 pt-md-5">
+                    <div class="col-auto">
+                        <a href="https://www.facebook.com/Sunbritesolar/" class="facebook" target="_blank">
+                            <svg width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.10153 24.209V13.2615H12.9611L13.539 8.99499H9.10142V6.27103C9.10142 5.03578 9.46165 4.19403 11.3222 4.19403L13.6952 4.19297V0.37708C13.2847 0.325179 11.8761 0.208984 10.2374 0.208984C6.81606 0.208984 4.47374 2.19722 4.47374 5.84862V8.99499H0.604248V13.2615H4.47374V24.2089H9.10153V24.209Z" fill="#080F2B" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <a href="https://www.instagram.com/sunbritesolar" class="instagram" target="_blank">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.816406 12.209C0.816406 7.41546 0.816406 5.01871 1.95866 3.29239C2.46873 2.5215 3.12892 1.86131 3.89981 1.35124C5.62613 0.208984 8.02289 0.208984 12.8164 0.208984C17.6099 0.208984 20.0067 0.208984 21.733 1.35124C22.5039 1.86131 23.1641 2.5215 23.6742 3.29239C24.8164 5.01871 24.8164 7.41546 24.8164 12.209C24.8164 17.0025 24.8164 19.3993 23.6742 21.1256C23.1641 21.8965 22.5039 22.5567 21.733 23.0667C20.0067 24.209 17.6099 24.209 12.8164 24.209C8.02289 24.209 5.62613 24.209 3.89981 23.0667C3.12892 22.5567 2.46873 21.8965 1.95866 21.1256C0.816406 19.3993 0.816406 17.0025 0.816406 12.209ZM19.0287 12.2089C19.0287 15.64 16.2472 18.4214 12.8161 18.4214C9.38503 18.4214 6.60358 15.64 6.60358 12.2089C6.60358 8.77779 9.38503 5.99633 12.8161 5.99633C16.2472 5.99633 19.0287 8.77779 19.0287 12.2089ZM12.8161 16.3195C15.0864 16.3195 16.9268 14.4791 16.9268 12.2089C16.9268 9.93862 15.0864 8.09821 12.8161 8.09821C10.5459 8.09821 8.70545 9.93862 8.70545 12.2089C8.70545 14.4791 10.5459 16.3195 12.8161 16.3195ZM19.274 7.14397C20.0802 7.14397 20.7338 6.49042 20.7338 5.68421C20.7338 4.878 20.0802 4.22445 19.274 4.22445C18.4678 4.22445 17.8143 4.878 17.8143 5.68421C17.8143 6.49042 18.4678 7.14397 19.274 7.14397Z" fill="#080F2B" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-        <?= renderImg('footer-bulb.png', 'lib', 'footer_bulb') ?>
-    </footer>
-</div>
+        <div class="divider_line"></div>
+        <div class="fs-20 pt-4 pb-3 pb-lg-5 copyright">
+            Copyright © 2023 Sunbrite Solar | Terms and Conditions | Privacy Policy <br class="d-none d-lg-block d-xl-none"> Website by AiiMS Group Pty Ltd <a href="https://www.aiims.com.au/like-our-work/" target="_blank" class="ps-4 d-none d-lg-inline"><?= renderImg('aiims1.png', 'logo') ?></a>
+        </div>
+        <div class="text-center d-lg-none pb-5">
+            <a href="https://www.aiims.com.au/like-our-work/" target="_blank" class="ps-4"><?= renderImg('aiims1.png', 'logo') ?></a>
+        </div>
+    </div>
+    <?= renderImg('footer-bulb.png', 'lib', 'footer_bulb') ?>
+</footer>

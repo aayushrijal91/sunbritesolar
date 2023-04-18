@@ -16,6 +16,22 @@ $("#brands_slider").slick({
     ]
 });
 
+$(".offering_slider").slick({
+    slidesToShow: 1,
+    arrows: false,
+    slidesToScroll: 1,
+    draggable: false,
+    adaptiveHeight: true
+});
+
+$('.slideToNext').on('click', function() {
+    $(this).parents(".offering_slider").slick('slickGoTo', 1);
+});
+
+$('.slideToPrev').on('click', function() {
+    $(this).parents('.offering_slider').slick('slickGoTo', 0);
+});
+
 $("#testimonial_slider").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
