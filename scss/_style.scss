@@ -278,31 +278,16 @@ section.government_assistance {
             top: 15%;
             z-index: 1;
             transform: rotate(20deg);
-            animation-name: bounce;
-            animation-duration: 1s;
-            animation-timing-function: ease-in-out;
-            animation-iteration-count: infinite;
+            transition: 1s;
 
             @include media-breakpoint-down(sm) {
                 width: 41%;
             }
-        }
 
-        @keyframes bounce {
-            0% {
-                transform: rotate(20deg);
-            }
-
-            40%,
-            50%,
-            60%,
-            80% {
+            &.animate {
                 transform: rotate(50deg);
                 left: 70%;
-            }
-
-            100% {
-                transform: rotate(20deg);
+                transition: 1s;
             }
         }
 

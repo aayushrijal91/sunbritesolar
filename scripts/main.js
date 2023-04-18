@@ -1,6 +1,6 @@
 $("#brands_slider").slick({
-    slidesToShow : 4,
-    slidesToScroll : 1,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     autoplay: true,
     arrows: false,
     speed: 2000,
@@ -24,11 +24,11 @@ $(".offering_slider").slick({
     adaptiveHeight: true
 });
 
-$('.slideToNext').on('click', function() {
+$('.slideToNext').on('click', function () {
     $(this).parents(".offering_slider").slick('slickGoTo', 1);
 });
 
-$('.slideToPrev').on('click', function() {
+$('.slideToPrev').on('click', function () {
     $(this).parents('.offering_slider').slick('slickGoTo', 0);
 });
 
@@ -83,4 +83,16 @@ $('#return-to-top').on('click', () => {
     $('body,html').animate({
         scrollTop: 0
     }, 500);
+});
+
+$(window).scroll(function () {
+    var targetOffset = $('#rebates').offset().top;
+    var scrollOffset = $(window).scrollTop();
+
+    if (scrollOffset >= targetOffset) {
+        console.log('User has scrolled to target section');
+        $('.handcash').addClass('animate');
+    } else {
+        $('.handcash').removeClass('animate');
+    }
 });
