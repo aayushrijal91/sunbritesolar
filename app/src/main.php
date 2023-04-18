@@ -193,7 +193,7 @@
                             </div>
                             <div class="fs-96 lh-0_76 py-md-5 text-tertiary heading">Renewable Energy is the future</div>
                             <div class="fs-24 text-tertiary lh-1 py-4 pt-md-0 pb-md-7 description">
-                                Embrace the future of renewable energy with our custom design solar panels, designed to power a sustainable world for generations to come. As we face the urgent challenge of climate change, solar energy is no longer just an option; it's the key to a cleaner, greener, and more resilient tomorrow.
+                                Embrace the future of renewable energy with our custom design solar solutions, designed to power a sustainable world for generations to come. As we face the urgent challenge of climate change, solar energy is no longer just an option; it's the key to a cleaner, greener, and more resilient tomorrow.
                             </div>
                             <div>
                                 <a href="#form" data-bs-toggle="modal" data-bs-target="#form" class="text-tertiary fs-24 pe-3 button d-none d-md-inline-block">Speak with our Solar Energy Consultants today</a>
@@ -333,7 +333,7 @@
                         <div class="w-100 d-flex justify-content-center pt-4 pt-md-9"><?= renderImg('fancy-dollar.png', 'lib', 'fancy-dollar') ?></div>
                     </div>
                     <div class="advantage-2">
-                        <div class="fs-48 lh-1 pb-3 pb-md-6 heading">Increase<br> Property Costs</div>
+                        <div class="fs-48 lh-1 pb-3 pb-md-6 heading">Increase<br> Property Value</div>
                         <a href="#form" data-bs-toggle="modal" data-bs-target="#form" class="btn border-white d-inline-flex rounded-0 text-white py-3 px-md-5">
                             Enquire Now
                         </a>
@@ -507,7 +507,7 @@
                     <?= renderImg('clean-energy-council.png', 'logo', 'd-none d-md-block') ?>
                 </div>
                 <div class="col-xl-4">
-                    <div class="row">
+                    <div class="row gx-md-5 gx-xl-7">
                         <div class="col-md-auto">
                             <div class="fs-26 fw-700 pt-5 pb-3 py-md-5">Quick Links</div>
                             <ul class="footer_menu">
