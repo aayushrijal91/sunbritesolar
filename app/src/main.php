@@ -4,7 +4,7 @@
 <div class="modal fade" id="form" tabindex="-1" aria-labelledby="formLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form action="<?= $domain ?>/src/form" method="POST">
+            <form action="./src/form.php" method="POST" id="heroForm">
                 <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse" />
                 <div class="modal-header">
                     <h5 class="modal-title" id="formLabel">Get Free Quote</h5>
@@ -19,7 +19,8 @@
                             <input type="email" class="form-control" placeholder="Your Email" name="email" required />
                         </div>
                         <div class="col-12">
-                            <input type="tel" class="form-control" placeholder="Your Number" name="phoneNumber" required />
+                            <input type="tel" id="phoneInput" class="form-control" placeholder="Your Number" name="phoneNumber" required />
+                            <small id="phoneError" class="validationError">Please enter a valid phone number</small>
                         </div>
                         <div class="col-12">
                             <select name="service" class="form-control form-select" required>
