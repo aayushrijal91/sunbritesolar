@@ -1,4 +1,4 @@
-<?= renderImg('solar_globe.png', 'lib', 'solar_globe') ?>
+<?= renderImg('solar_globe.png', 'lib', $thankyouPage ? 'solar_globe thankyou' : 'solar_globe') ?>
 
 <!-- Modal -->
 <div class="modal fade" id="form" tabindex="-1" aria-labelledby="formLabel" aria-hidden="true">

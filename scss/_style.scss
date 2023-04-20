@@ -58,6 +58,10 @@ body {
         top: 124px;
         z-index: 100;
 
+        &.thankyou {
+            top: 185px;
+        }
+
         @include media-breakpoint-down(xxl) {
             width: 500px;
         }
